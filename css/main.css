@@ -1,0 +1,11 @@
+body {
+    margin: 30px;
+}
+.login-panel {
+    margin: 150px auto;
+    width: 1000px;
+    padding: 30px;
+}
+input, select {
+    margin: 20px;
+}

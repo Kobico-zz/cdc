@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gigya Demo</title>
+    <link rel="stylesheet" href="node_modules/bootflat/css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="css/main.css" type="text/css"/>
+<!--    <script src="https://cdns.us1-st1.gigya.com/js/gigya.js?apiKey=3_hS_El2sb5WKFauepzz6AkuVggU1PkO73jxdVgqNO9OBsC_-GAv3k-wwjb_08WlRd"></script>-->
+    <script src="https://cdns.gigya.com/js/gigya.js?apiKey=3_cedjEwc0k12UEQVJkIfdUib4FQ9O-o_UMti8iFNqIDWtprbtNeFEKHWCZDay3AV5"></script>
+<!--    <script src="https://cdns.il1-st7.gigya.com/js/gigya.js?apiKey=3_RlHrwkTnKisrDqb9MEk807szJFBvJdfl6ORzsT3L3X0GYeyWJPS4A4dJl-Igks4O"></script>-->
+<!--    <script src="https://cdns.us1-st1.gigya.com/js/gigya.js?apiKey=3_HCalFtInj&#45;&#45;1FsLPEnTrEB0G1up6BDobQ16YVTt00VBL4DrFYK54Vy_g-zeu6gNw"></script> &lt;!&ndash; Alex &ndash;&gt;-->
+</head>
+<body>
+<div class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <span class="navbar-brand">Push TFA Demo Site</span>
+        </div>
+        <div class="navbar-text navbar-right">
+            <h4>
+                <span id="userInfo"></span> <button id="logoutBtn" style="display:none" type="button" class="btn btn-danger navbar-btn" onclick="gigya.accounts.logout()">Logout</button>
+            </h4>
+        </div>
+    </div>
+</div>
+<div id="screenSetPanel" class="login-panel panel panel-default">
+    <div id="screenSet"></div>
+</div>
+    <script>
+
+        const screenSetPrefix = 'Default';
+        const screenSetName = 'RegistrationLogin'
+        const screenName = 'login';
+        window['onGigyaServiceReady'] = function() {
+            showScreenSet();
+            if(document.cookie.indexOf('glt_') !== -1) {
+                gigya.accounts.getAccountInfo({callback: onLogin});
+            }
+            gigya.accounts.addEventHandlers({
+                onLogin, onLogout
+            });
+        };
+        function showScreenSet() {
+            gigya.accounts.showScreenSet({
+                containerID: 'screenSet',
+                screenSet: screenSetPrefix + '-' + screenSetName,
+                startScreen: 'gigya-' + screenName + '-screen'
+            });
+        }
+        function onLogin(e) {
+            document.getElementById('userInfo').innerHTML = "Hello, " + e.profile.firstName + " " + e.profile.lastName;
+            document.getElementById('logoutBtn').style.display = '';
+            document.getElementById('screenSetPanel').style.visibility = 'hidden';
+        }
+        function onLogout() {
+            document.getElementById('userInfo').innerHTML = '';
+            document.getElementById('logoutBtn').style.display = 'none';
+            document.getElementById('screenSetPanel').style.visibility = 'visible';
+            showScreenSet();
+        }
+    </script>
+</body>
+</html>
