@@ -53,6 +53,7 @@
                 });
             }
             function showProfile() {
+                document.getElementById('profileScreenSetPanel').style.display = '';
                 const screenSetName = 'ProfileUpdate'
                 const screenName = 'update-profile';
                 gigya.accounts.showScreenSet({
@@ -65,7 +66,6 @@
                 document.getElementById('userWelcome').innerHTML = "Hello, " + e.profile.firstName + " " + e.profile.lastName;
                 document.getElementById('user').style.display = '';
                 document.getElementById('loginScreenSetPanel').style.display = 'none';
-                document.getElementById('profileScreenSetPanel').style.display = '';
             }
             function onLogout() {
                 document.getElementById('userWelcome').innerHTML = '';
