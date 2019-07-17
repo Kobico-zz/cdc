@@ -1,0 +1,19 @@
+body {
+    padding: 30px;
+    text-align: center;
+}
+#screenSetContainer, #editConnectionsPanel, #addConnectionsPanel {
+    display: inline-block;
+}
+#control-panel {
+    padding: 20px;
+}
+.row.panel {
+    padding: 10px;
+}
+.navbar-header {
+    cursor: pointer;
+}
+.select-site {
+    background: #428bca;
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Old Browser</title>
+    <script src="https://cdns.gigya.com/js/gigya.js?apiKey=3_kfE8x4GkorRexjhKjepdgqgK4x_Pq3-_0aWHvclidY7km0kOsxKBZGFAojsYOb8x"></script>
+</head>
+<body>
+    <button onclick="gigya.accounts.logout()">Logout</button>
+    <script>
+        window['onGigyaServiceReady'] = function() {
+            gigya.accounts.showScreenSet({
+                screenSet: 'Default-RegistrationLogin'
+            });
+        }
+    </script>
+</body>
+</html>

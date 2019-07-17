@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Gigya Demo</title>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <link rel="stylesheet" href="/node_modules/bootflat/css/bootstrap.min.css" type="text/css"/>
+        <link rel="stylesheet" href="./css/main.css" type="text/css"/>
+        <script src="./js/components/index.js" type="module"></script>
+    </head>
+    <body>
+        <app-toolbar></app-toolbar>
+        <app-navbar></app-navbar>
+        <div class="panel panel-default" id="control-panel">
+            <div class="panel-heading">
+                Plugins
+            </div>
+            <div class="panel-body">
+                <button onclick="page.showAddConnections()" class="btn btn-default">Add Connections</button>
+                <button onclick="page.showEditConnections()" class="btn btn-default">Edit Connections</button>
+            </div>
+        </div>
+        <div id="screenSetContainer"></div>
+        <script type="module">
+            import { GigyaPage } from './js/main.js';
+            window.page = new GigyaPage();
+        </script>
+    </body>
+</html>
