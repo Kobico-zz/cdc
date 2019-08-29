@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="http://cdns.gigya.com/js/gigya.js?apiKey=3_kuba0fh9Ol6aKSer8QcDT_SeuEe5bFpA8XCtYEGPkVyRkJ4OyMtWydevVa7Lbg42"></script>
+    <title>Invisible Captcha</title>
+</head>
+<body>
+<div id="screenSet"></div>
+<script>
+    window.onGigyaServiceReady = function() {
+        gigya.accounts.showScreenSet({
+            screenSet: 'Default-RegistrationLogin',
+            startScreen: 'gigya-register-screen',
+            containerID: 'screenSet'
+        })
+    }
+
+</script>
+</body>
+</html>
