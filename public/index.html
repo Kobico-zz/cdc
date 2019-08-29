@@ -13,11 +13,39 @@
         <app-navbar></app-navbar>
         <div class="panel panel-default" id="control-panel">
             <div class="panel-heading">
-                Plugins
+                Plugins & Flows
             </div>
             <div class="panel-body">
-                <button onclick="page.showAddConnections()" class="btn btn-default">Add Connections</button>
-                <button onclick="page.showEditConnections()" class="btn btn-default">Edit Connections</button>
+                <div class="panel panel-success panel-collapse">
+                    <div class="panel-heading">
+                        Connections
+                    </div>
+                    <div class="panel-body">
+                        <button onclick="page.showAddConnections()" class="btn btn-default">Add Connections</button>
+                        <button onclick="page.showEditConnections()" class="btn btn-default">Edit Connections</button>
+                    </div>
+                </div>
+
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        SAML
+                    </div>
+                    <div class="panel-body">
+                        <label for="idp-name">Idp</label><input id="idp-name" value="test-idp"  />
+                        <button onclick="page.SAMLLogin()" class="btn btn-default">Saml Login</button>
+                    </div>
+                </div>
+
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        Screen Set
+                    </div>
+                    <div class="panel-body">
+                        <label for="screenSetName">Screen Set</label><input id="screenSetName" value="RegistrationLogin"/>
+                        <label for="screenName">Screen</label><input id="screenName" value="login"/>
+                        <button onclick="page.showScreenSet()" class="btn btn-default">Show Screen Set</button>
+                    </div>
+                </div>
             </div>
         </div>
         <div id="screenSetContainer"></div>

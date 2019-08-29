@@ -21,11 +21,10 @@ export class GigyaPage {
     async init() {
         this._dcSelector = document.getElementById('dc');
         this._siteSelector = document.getElementById('sites');
-        // console.log(this._query.getValue('dc'));
+        const selectedDC = this._query.getValue('dc') || 'us1';
+
         this._dcSelector.selectedIndex = Array.from(this._dcSelector.options).map(o => o.value)
-            .indexOf((this._query.getValue('dc') || 'us1'));
-        // console.log(this._dcSelector.selectedIndex);
-        // console.log(this._dcSelector.value);
+            .indexOf(selectedDC);
         await this.updateSites();
         this._dcSelector.addEventListener('change', async () => {
             await this.updateSites();
@@ -78,28 +77,34 @@ export class GigyaPage {
         const ind = Object.keys(sites).indexOf(document.location.hostname);
         this._siteSelector.selectedIndex = ind > -1 ? ind : 0;
         this._siteSelector.addEventListener('change', () => {
-            let domain = this._siteSelector.value;
-            const selectedSite = sites[domain];
-            this.updateSiteDetails(domain, selectedSite, true);
+            if(this._siteSelector.value && sites[this._siteSelector.value]) {
+                this.updateSiteDetails(sites[this._siteSelector.value]);
+            }
         });
-        this.updateSiteDetails(await this._siteService.getSite(this._dcSelector.value, this._siteSelector.value), true);
+        if(this._siteSelector.value && sites[this._siteSelector.value]) {
+            this.updateSiteDetails(sites[this._siteSelector.value]);
+        }
     }
 
-    updateSiteDetails(site, ignoreQuery = false) {
-        if(!this._siteSelector.value) {
-            return;
-        }
+    updateSiteDetails(site) {
         document.getElementById('domain').value = this._siteSelector.value;
-        document.getElementById('apiKey').value = (!ignoreQuery && this.apiKey) || site.apiKey || '3_Bhzk_WHAf96lx2BczqzjdRJ559gnXWEq2I2arqtH2PyX2N8xpT3PFJuMrNKjIGUv';
-        document.getElementById('dataCenter').value = (!ignoreQuery && this.dataCenter) || site.dc || 'us1';
-        document.getElementById('env').value = (!ignoreQuery && this.env) || site.env || 'prod';
-        document.getElementById('screenSetPrefix').value = (!ignoreQuery && this._query.getValue('screenSetPrefix')) || site.screenSetPrefix || 'Default';
+        document.getElementById('dataCenter').value = site.dc;
+        document.getElementById('env').value = site.env || 'prod';
+        document.getElementById('apiKey').value = site.apiKey;
+        document.getElementById('screenSetPrefix').value = site.screenSetPrefix || 'Default';
     }
 
     showScreenSet(screenSetName, screenName) {
         document.getElementById('screenSetContainer').innerHTML = '';
         const prefix = document.getElementById('screenSetPrefix').value;
+        if(!screenSetName) {
+            screenSetName = document.getElementById('screenSetName').value;
+        }
+        if(!screenName) {
+            screenName = document.getElementById('screenName').value;
+        }
         gigya.accounts.showScreenSet({
+            lang: 'he',
             containerID: 'screenSetContainer',
             screenSet: prefix + '-' + screenSetName,
             startScreen: 'gigya-' + screenName + '-screen'
@@ -112,6 +117,15 @@ export class GigyaPage {
 
     showEditConnections() {
         this._plugins.editConnections.show();
+    }
+
+    SAMLLogin() {
+        const idpName = document.getElementById('idp-name').value;
+        const login_params =  ({
+            'provider': 'saml-' + idpName,
+            'callback': e => this.onLogin(e)
+        });
+        gigya.socialize.login(login_params);
     }
 
     logout() {
