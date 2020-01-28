@@ -14,6 +14,7 @@ export class GigyaPage {
     };
 
     constructor() {
+        window.__gigyaConf = {toggles: {alwaysValidatePassword: true}};
         this.init()
             .then(() => console.log('Site initialization completed successfully'));
     }
@@ -49,11 +50,12 @@ export class GigyaPage {
         if(document.cookie.indexOf('glt_') !== -1) {
             gigya.accounts.getAccountInfo({callback: res => res.errorCode === 0 ? this.onLogin(res) : this.onLogout()});
         } else {
-            this.showScreenSet( 'RegistrationLogin', 'login');
+            //this.showScreenSet( 'RegistrationLogin', 'login');
         }
         gigya.accounts.addEventHandlers({
             onLogin: e => this.onLogin(e), onLogout: () => this.onLogout()
         });
+        // gigya.setAccountResidency('eu1');
     }
 
     async updateSites() {
@@ -104,7 +106,6 @@ export class GigyaPage {
             screenName = document.getElementById('screenName').value;
         }
         gigya.accounts.showScreenSet({
-            lang: 'he',
             containerID: 'screenSetContainer',
             screenSet: prefix + '-' + screenSetName,
             startScreen: 'gigya-' + screenName + '-screen'
@@ -122,10 +123,16 @@ export class GigyaPage {
     SAMLLogin() {
         const idpName = document.getElementById('idp-name').value;
         const login_params =  ({
+            authFlow: 'redirect',
             'provider': 'saml-' + idpName,
             'callback': e => this.onLogin(e)
         });
         gigya.socialize.login(login_params);
+    }
+
+    CLDLogin() {
+        const cldName = document.getElementById('cld-name').value;
+        location.href = `http://${cldName}:3232/?dc=il1&env=prod&apiKey=3_p628lGjrDJDduxZlrecTvilY4Ah1XKvfiuV9bKKDrEnjQ0J0HCl9ZH4Ak9ekxW57&cld-redirect=${encodeURIComponent(location.href)}`;
     }
 
     logout() {
@@ -133,8 +140,15 @@ export class GigyaPage {
     }
 
     onLogin(e) {
+        console.log('login event', e);
+        if(this.redirectURL) {
+            location.href = this.redirectURL;
+            return;
+        }
         document.getElementById('userWelcome').innerHTML = "Hello, " + e.profile.firstName + " " + e.profile.lastName;
         document.getElementById('user').style.display = '';
+        gigya.accounts.hideScreenSet({containerID:'screenSetContainer'});
+
         this.showScreenSet('ProfileUpdate', 'update-profile')
     }
     onLogout() {
@@ -167,8 +181,12 @@ export class GigyaPage {
         return this._query.getValue('env');
     }
 
+    get redirectURL() {
+        return decodeURIComponent(this._query.getValue('cld-redirect'));
+    }
+
     loadGigyaJs() {
-        const apiKey = document.getElementById('apiKey').value;;
+        const apiKey = document.getElementById('apiKey').value;
         let dc = document.getElementById('dataCenter').value;
         dc = dc === 'us1' ? '' : `.${dc}`;
         let env = document.getElementById('env').value;

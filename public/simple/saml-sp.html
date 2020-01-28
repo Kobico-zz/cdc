@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="http://cdns.gigya.com/js/gigya.js?apiKey=3_fMYaro68WOBgk3UJLgM4nQhfJH9sELq-Rk27TQGaCHQvm_sKRXSUpowFRVTS8GWj"></script>
+    <title>Saml Login Demo</title>
+</head>
+<body>
+Redirect <input id="authFlow" type="checkbox"/>
+<button id="samlLogin" onclick="samlLogin()">Saml Login</button>
+<script>
+    function samlLogin() {
+        var authFlow = document.getElementById('authFlow').checked ? 'redirect': undefined;
+        var params = {
+            authFlow: authFlow,
+            provider: 'saml-test-idp',
+            callback: e => alert(`Welcome ${JSON.stringify(e)}`)
+        };
+        gigya.socialize.login(params);
+    }
+</script>
+</body>
+</html>

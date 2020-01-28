@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Firebase</title>
+</head>
+<body>
+    <script>
+        window.onload = function() {
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            const image = new Image(300, 300);
+            image.src = 'https://firebasestorage.googleapis.com/v0/b/mywave-35d1f.appspot.com/o/gallery%2F1573372284082_3.jpg?alt=media&token=7bb195fc-aeb2-4a02-a4c9-607067d67ef9';
+            ctx.drawImage(image, 300, 300);
+        };
+
+    </script>
+<canvas id="myCanvas"></canvas>
+</body>
+</html>

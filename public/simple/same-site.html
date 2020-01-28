@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Same Site Tests</title>
+</head>
+<body>
+    <iframe id="apiService"></iframe>
+<script>
+    const apiService = document.getElementById('apiService');
+    apiService.src = `https://clddomain.com:3233/simple/iframe-api.html`;
+    apiService.onload = () => {
+        apiService.contentWindow.postMessage('a=b&c=d','*')
+    }
+</script>
+</body>
+</html>

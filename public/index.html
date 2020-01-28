@@ -3,10 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <title>Gigya Demo</title>
+        <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <link rel="stylesheet" href="/node_modules/bootflat/css/bootstrap.min.css" type="text/css"/>
         <link rel="stylesheet" href="./css/main.css" type="text/css"/>
         <script src="./js/components/index.js" type="module"></script>
+
     </head>
     <body>
         <app-toolbar></app-toolbar>
@@ -28,11 +30,14 @@
 
                 <div class="panel panel-success">
                     <div class="panel-heading">
-                        SAML
+                        SAML & CLD
                     </div>
                     <div class="panel-body">
                         <label for="idp-name">Idp</label><input id="idp-name" value="test-idp"  />
                         <button onclick="page.SAMLLogin()" class="btn btn-default">Saml Login</button>
+                        &nbsp;
+                        <label for="cld-name">Cld</label><input id="cld-name" value="il1.cld-login.parent"  />
+                        <button onclick="page.CLDLogin()" class="btn btn-default">CLD Login</button>
                     </div>
                 </div>
 
