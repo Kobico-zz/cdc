@@ -1,0 +1,169 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"438f69f0-b8a2-475a-80f8-3ec28224fbbf\" name=\"Default Changelist\" comment=\"\" />\r\n    <ignored path=\"$PROJECT_DIR$/.tmp/\" />\r\n    <ignored path=\"$PROJECT_DIR$/temp/\" />\r\n    <ignored path=\"$PROJECT_DIR$/tmp/\" />\r\n    <option name=\"EXCLUDED_CONVERTED_TO_IGNORED\" value=\"true\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileEditorManager\">\r\n    <leaf SIDE_TABS_SIZE_LIMIT_KEY=\"300\">\r\n      <file pinned=\"false\" current-in-tab=\"true\">\r\n        <entry file=\"file://$PROJECT_DIR$/index.html\">\r\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n            <state relative-caret-position=\"464\">\r\n              <caret line=\"57\" column=\"12\" lean-forward=\"true\" selection-start-line=\"57\" selection-start-column=\"12\" selection-end-line=\"57\" selection-end-column=\"12\" />\r\n              <folding>\r\n                <element signature=\"n#style#0;n#button#0;n#h4#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top\" expanded=\"true\" />\r\n              </folding>\r\n            </state>\r\n          </provider>\r\n        </entry>\r\n      </file>\r\n      <file pinned=\"false\" current-in-tab=\"false\">\r\n        <entry file=\"file://$PROJECT_DIR$/css/bootstrap.min.css\">\r\n          <provider selected=\"true\" editor-type-id=\"text-editor\" />\r\n        </entry>\r\n      </file>\r\n      <file pinned=\"false\" current-in-tab=\"false\">\r\n        <entry file=\"file://$PROJECT_DIR$/css/main.css\">\r\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n            <state relative-caret-position=\"68\">\r\n              <caret line=\"4\" column=\"14\" selection-start-line=\"4\" selection-start-column=\"14\" selection-end-line=\"4\" selection-end-column=\"14\" />\r\n            </state>\r\n          </provider>\r\n        </entry>\r\n      </file>\r\n    </leaf>\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"HTML File\" />\r\n        <option value=\"CSS File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"FindInProjectRecents\">\r\n    <findStrings>\r\n      <find>st1</find>\r\n    </findStrings>\r\n  </component>\r\n  <component name=\"IdeDocumentHistory\">\r\n    <option name=\"CHANGED_PATHS\">\r\n      <list>\r\n        <option value=\"$PROJECT_DIR$/css/main.css\" />\r\n        <option value=\"$PROJECT_DIR$/index.html\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectFrameBounds\" extendedState=\"6\">\r\n    <option name=\"x\" value=\"-9\" />\r\n    <option name=\"y\" value=\"-9\" />\r\n    <option name=\"width\" value=\"1938\" />\r\n    <option name=\"height\" value=\"1098\" />\r\n  </component>\r\n  <component name=\"ProjectView\">\r\n    <navigator proportions=\"\" version=\"1\">\r\n      <foldersAlwaysOnTop value=\"true\" />\r\n    </navigator>\r\n    <panes>\r\n      <pane id=\"Scope\" />\r\n      <pane id=\"ProjectPane\">\r\n        <subPane>\r\n          <expand>\r\n            <path>\r\n              <item name=\"cdc\" type=\"b2602c69:ProjectViewProjectNode\" />\r\n              <item name=\"cdc\" type=\"462c0819:PsiDirectoryNode\" />\r\n            </path>\r\n          </expand>\r\n          <select />\r\n        </subPane>\r\n      </pane>\r\n      <pane id=\"PackagesPane\" />\r\n    </panes>\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"DefaultHtmlFileTemplate\" value=\"HTML File\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$/css\" />\r\n    <property name=\"list.type.of.created.stylesheet\" value=\"CSS\" />\r\n    <property name=\"node.js.detected.package.eslint\" value=\"true\" />\r\n    <property name=\"node.js.detected.package.tslint\" value=\"true\" />\r\n    <property name=\"node.js.path.for.package.eslint\" value=\"project\" />\r\n    <property name=\"node.js.path.for.package.tslint\" value=\"project\" />\r\n    <property name=\"node.js.selected.package.eslint\" value=\"(autodetect)\" />\r\n    <property name=\"node.js.selected.package.tslint\" value=\"(autodetect)\" />\r\n    <property name=\"nodejs_interpreter_path.stuck_in_default_project\" value=\"undefined stuck path\" />\r\n    <property name=\"nodejs_npm_path_reset_for_default_project\" value=\"true\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\I347329\\OneDrive - SAP SE\\Work\\dvlp\\Personal\\cdc\\css\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunDashboard\">\r\n    <option name=\"ruleStates\">\r\n      <list>\r\n        <RuleState>\r\n          <option name=\"name\" value=\"ConfigurationTypeDashboardGroupingRule\" />\r\n        </RuleState>\r\n        <RuleState>\r\n          <option name=\"name\" value=\"StatusDashboardGroupingRule\" />\r\n        </RuleState>\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"SvnConfiguration\">\r\n    <configuration />\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"438f69f0-b8a2-475a-80f8-3ec28224fbbf\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1560849774528</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1560849774528</updated>\r\n      <workItem from=\"1560849775651\" duration=\"1113000\" />\r\n      <workItem from=\"1560931060940\" duration=\"1256000\" />\r\n      <workItem from=\"1560945670652\" duration=\"10432000\" />\r\n      <workItem from=\"1561111606333\" duration=\"13019000\" />\r\n      <workItem from=\"1561533742845\" duration=\"3736000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TimeTrackingManager\">\r\n    <option name=\"totallyTimeSpent\" value=\"29556000\" />\r\n  </component>\r\n  <component name=\"ToolWindowManager\">\r\n    <frame x=\"-8\" y=\"-8\" width=\"1936\" height=\"1176\" extended-state=\"6\" />\r\n    <editor active=\"true\" />\r\n    <layout>\r\n      <window_info active=\"true\" content_ui=\"combo\" id=\"Project\" order=\"0\" visible=\"true\" weight=\"0.17175975\" />\r\n      <window_info id=\"Structure\" order=\"1\" side_tool=\"true\" weight=\"0.25\" />\r\n      <window_info id=\"Favorites\" order=\"2\" side_tool=\"true\" />\r\n      <window_info anchor=\"bottom\" id=\"Message\" order=\"0\" />\r\n      <window_info anchor=\"bottom\" id=\"Find\" order=\"1\" />\r\n      <window_info anchor=\"bottom\" id=\"Run\" order=\"2\" />\r\n      <window_info anchor=\"bottom\" id=\"Debug\" order=\"3\" weight=\"0.4\" />\r\n      <window_info anchor=\"bottom\" id=\"Cvs\" order=\"4\" weight=\"0.25\" />\r\n      <window_info anchor=\"bottom\" id=\"Inspection\" order=\"5\" weight=\"0.4\" />\r\n      <window_info anchor=\"bottom\" id=\"TODO\" order=\"6\" />\r\n      <window_info anchor=\"bottom\" id=\"Docker\" order=\"7\" show_stripe_button=\"false\" />\r\n      <window_info anchor=\"bottom\" id=\"Version Control\" order=\"8\" />\r\n      <window_info anchor=\"bottom\" id=\"Terminal\" order=\"9\" visible=\"true\" weight=\"0.32981783\" />\r\n      <window_info anchor=\"bottom\" id=\"Event Log\" order=\"10\" side_tool=\"true\" />\r\n      <window_info anchor=\"right\" id=\"Commander\" internal_type=\"SLIDING\" order=\"0\" type=\"SLIDING\" weight=\"0.4\" />\r\n      <window_info anchor=\"right\" id=\"Ant Build\" order=\"1\" weight=\"0.25\" />\r\n      <window_info anchor=\"right\" content_ui=\"combo\" id=\"Hierarchy\" order=\"2\" weight=\"0.25\" />\r\n    </layout>\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"1\" />\r\n  </component>\r\n  <component name=\"editorHistoryManager\">\r\n    <entry file=\"file://$PROJECT_DIR$/css/main.css\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"68\">\r\n          <caret line=\"4\" column=\"14\" selection-start-line=\"4\" selection-start-column=\"14\" selection-end-line=\"4\" selection-end-column=\"14\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/css/bootstrap.min.css\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\" />\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/index.html\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"464\">\r\n          <caret line=\"57\" column=\"12\" lean-forward=\"true\" selection-start-line=\"57\" selection-start-column=\"12\" selection-end-line=\"57\" selection-end-column=\"12\" />\r\n          <folding>\r\n            <element signature=\"n#style#0;n#button#0;n#h4#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top\" expanded=\"true\" />\r\n          </folding>\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision 0e68158b5da399c22705422d39ce3200874a002e)
++++ .idea/workspace.xml	(date 1561636469925)
+@@ -1,7 +1,11 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="438f69f0-b8a2-475a-80f8-3ec28224fbbf" name="Default Changelist" comment="" />
++    <list default="true" id="438f69f0-b8a2-475a-80f8-3ec28224fbbf" name="Default Changelist" comment="">
++      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
++    </list>
+     <ignored path="$PROJECT_DIR$/.tmp/" />
+     <ignored path="$PROJECT_DIR$/temp/" />
+     <ignored path="$PROJECT_DIR$/tmp/" />
+@@ -16,8 +20,8 @@
+       <file pinned="false" current-in-tab="true">
+         <entry file="file://$PROJECT_DIR$/index.html">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="464">
+-              <caret line="57" column="12" lean-forward="true" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
++            <state relative-caret-position="260">
++              <caret line="44" column="36" lean-forward="true" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
+               <folding>
+                 <element signature="n#style#0;n#button#0;n#h4#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+               </folding>
+@@ -54,6 +58,9 @@
+       <find>st1</find>
+     </findStrings>
+   </component>
++  <component name="Git.Settings">
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
+   <component name="IdeDocumentHistory">
+     <option name="CHANGED_PATHS">
+       <list>
+@@ -68,6 +75,7 @@
+     <option name="width" value="1938" />
+     <option name="height" value="1098" />
+   </component>
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+   <component name="ProjectView">
+     <navigator proportions="" version="1">
+       <foldersAlwaysOnTop value="true" />
+@@ -90,6 +98,7 @@
+   </component>
+   <component name="PropertiesComponent">
+     <property name="DefaultHtmlFileTemplate" value="HTML File" />
++    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+     <property name="WebServerToolWindowFactoryState" value="false" />
+     <property name="last_opened_file_path" value="$PROJECT_DIR$/css" />
+     <property name="list.type.of.created.stylesheet" value="CSS" />
+@@ -133,18 +142,18 @@
+       <workItem from="1560931060940" duration="1256000" />
+       <workItem from="1560945670652" duration="10432000" />
+       <workItem from="1561111606333" duration="13019000" />
+-      <workItem from="1561533742845" duration="3736000" />
++      <workItem from="1561533742845" duration="6544000" />
+     </task>
+     <servers />
+   </component>
+   <component name="TimeTrackingManager">
+-    <option name="totallyTimeSpent" value="29556000" />
++    <option name="totallyTimeSpent" value="32364000" />
+   </component>
+   <component name="ToolWindowManager">
+     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+     <editor active="true" />
+     <layout>
+-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17175975" />
++      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17175975" />
+       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+       <window_info id="Favorites" order="2" side_tool="true" />
+       <window_info anchor="bottom" id="Message" order="0" />
+@@ -155,8 +164,8 @@
+       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+       <window_info anchor="bottom" id="TODO" order="6" />
+       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+-      <window_info anchor="bottom" id="Version Control" order="8" />
+-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32981783" />
++      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32981783" />
++      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32981783" />
+       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+@@ -179,8 +188,8 @@
+     </entry>
+     <entry file="file://$PROJECT_DIR$/index.html">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="464">
+-          <caret line="57" column="12" lean-forward="true" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
++        <state relative-caret-position="260">
++          <caret line="44" column="36" lean-forward="true" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
+           <folding>
+             <element signature="n#style#0;n#button#0;n#h4#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+           </folding>
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/vcs.xml	(date 1561552428953)
++++ .idea/vcs.xml	(date 1561552428953)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <title>Gigya Demo</title>\r\n    <link rel=\"stylesheet\" href=\"node_modules/bootflat/css/bootstrap.min.css\" type=\"text/css\"/>\r\n    <link rel=\"stylesheet\" href=\"css/main.css\" type=\"text/css\"/>\r\n<!--    <script src=\"https://cdns.us1-st1.gigya.com/js/gigya.js?apiKey=3_hS_El2sb5WKFauepzz6AkuVggU1PkO73jxdVgqNO9OBsC_-GAv3k-wwjb_08WlRd\"></script>-->\r\n    <script src=\"https://cdns.gigya.com/js/gigya.js?apiKey=3_cedjEwc0k12UEQVJkIfdUib4FQ9O-o_UMti8iFNqIDWtprbtNeFEKHWCZDay3AV5\"></script>\r\n<!--    <script src=\"https://cdns.il1-st7.gigya.com/js/gigya.js?apiKey=3_RlHrwkTnKisrDqb9MEk807szJFBvJdfl6ORzsT3L3X0GYeyWJPS4A4dJl-Igks4O\"></script>-->\r\n<!--    <script src=\"https://cdns.us1-st1.gigya.com/js/gigya.js?apiKey=3_HCalFtInj&#45;&#45;1FsLPEnTrEB0G1up6BDobQ16YVTt00VBL4DrFYK54Vy_g-zeu6gNw\"></script> &lt;!&ndash; Alex &ndash;&gt;-->\r\n</head>\r\n<body>\r\n<div class=\"navbar navbar-default\">\r\n    <div class=\"container-fluid\">\r\n        <div class=\"navbar-header\">\r\n            <span class=\"navbar-brand\">Push TFA Demo Site</span>\r\n        </div>\r\n        <div class=\"navbar-text navbar-right\">\r\n            <h4>\r\n                <span id=\"userInfo\"></span> <button id=\"logoutBtn\" style=\"display:none\" type=\"button\" class=\"btn btn-danger navbar-btn\" onclick=\"gigya.accounts.logout()\">Logout</button>\r\n            </h4>\r\n        </div>\r\n    </div>\r\n</div>\r\n<div id=\"screenSetPanel\" class=\"login-panel panel panel-default\">\r\n    <div id=\"screenSet\"></div>\r\n</div>\r\n    <script>\r\n\r\n        const screenSetPrefix = 'Default';\r\n        const screenSetName = 'RegistrationLogin'\r\n        const screenName = 'login';\r\n        window['onGigyaServiceReady'] = function() {\r\n            showScreenSet();\r\n            if(document.cookie.indexOf('glt_') !== -1) {\r\n                gigya.accounts.getAccountInfo({callback: onLogin});\r\n            }\r\n            gigya.accounts.addEventHandlers({\r\n                onLogin, onLogout\r\n            });\r\n        };\r\n        function showScreenSet() {\r\n            gigya.accounts.showScreenSet({\r\n                containerID: 'screenSet',\r\n                screenSet: screenSetPrefix + '-' + screenSetName,\r\n                startScreen: 'gigya-' + screenName + '-screen'\r\n            });\r\n        }\r\n        function onLogin(e) {\r\n            document.getElementById('userInfo').innerHTML = \"Hello, \" + e.profile.firstName + \" \" + e.profile.lastName;\r\n            document.getElementById('logoutBtn').style.display = '';\r\n            document.getElementById('screenSetPanel').style.visibility = 'hidden';\r\n        }\r\n        function onLogout() {\r\n            document.getElementById('userInfo').innerHTML = '';\r\n            document.getElementById('logoutBtn').style.display = 'none';\r\n            document.getElementById('screenSetPanel').style.visibility = 'visible';\r\n            showScreenSet();\r\n        }\r\n    </script>\r\n</body>\r\n</html>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- index.html	(revision 0e68158b5da399c22705422d39ce3200874a002e)
++++ index.html	(date 1561636483082)
+@@ -7,7 +7,8 @@
+     <link rel="stylesheet" href="css/main.css" type="text/css"/>
+ <!--    <script src="https://cdns.us1-st1.gigya.com/js/gigya.js?apiKey=3_hS_El2sb5WKFauepzz6AkuVggU1PkO73jxdVgqNO9OBsC_-GAv3k-wwjb_08WlRd"></script>-->
+     <script src="https://cdns.gigya.com/js/gigya.js?apiKey=3_cedjEwc0k12UEQVJkIfdUib4FQ9O-o_UMti8iFNqIDWtprbtNeFEKHWCZDay3AV5"></script>
+-<!--    <script src="https://cdns.il1-st7.gigya.com/js/gigya.js?apiKey=3_RlHrwkTnKisrDqb9MEk807szJFBvJdfl6ORzsT3L3X0GYeyWJPS4A4dJl-Igks4O"></script>-->
++    <!--    <script src="https://cdns.gigya.com/js/gigya.js?apiKey=3_ae66IUIdCnKq1RDkC7ruhPxg_bQvAh1gfek2rDF20wxIf2hFXqZxjfCSdYFIJrES"></script>-->
++    <!--    <script src="https://cdns.il1-st7.gigya.com/js/gigya.js?apiKey=3_RlHrwkTnKisrDqb9MEk807szJFBvJdfl6ORzsT3L3X0GYeyWJPS4A4dJl-Igks4O"></script>-->
+ <!--    <script src="https://cdns.us1-st1.gigya.com/js/gigya.js?apiKey=3_HCalFtInj&#45;&#45;1FsLPEnTrEB0G1up6BDobQ16YVTt00VBL4DrFYK54Vy_g-zeu6gNw"></script> &lt;!&ndash; Alex &ndash;&gt;-->
+ </head>
+ <body>
+@@ -16,9 +17,9 @@
+         <div class="navbar-header">
+             <span class="navbar-brand">Push TFA Demo Site</span>
+         </div>
+-        <div class="navbar-text navbar-right">
++        <div id="user" class="navbar-text navbar-right">
+             <h4>
+-                <span id="userInfo"></span> <button id="logoutBtn" style="display:none" type="button" class="btn btn-danger navbar-btn" onclick="gigya.accounts.logout()">Logout</button>
++                <span id="userInfo"></span> <button id="logoutBtn" style="display:none" type="button" class="btn btn-danger navbar-btn" onclick="logout()">Logout</button>
+             </h4>
+         </div>
+     </div>
+@@ -40,6 +41,9 @@
+                 onLogin, onLogout
+             });
+         };
++        function logout() {
++            gigya.accounts.logout({callback:cb});
++        }
+         function showScreenSet() {
+             gigya.accounts.showScreenSet({
+                 containerID: 'screenSet',
+@@ -52,6 +56,9 @@
+             document.getElementById('logoutBtn').style.display = '';
+             document.getElementById('screenSetPanel').style.visibility = 'hidden';
+         }
++        function cb() {
++            console.log('cb');
++        }
+         function onLogout() {
+             document.getElementById('userInfo').innerHTML = '';
+             document.getElementById('logoutBtn').style.display = 'none';

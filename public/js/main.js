@@ -14,7 +14,7 @@ export class GigyaPage {
     };
 
     constructor() {
-        window.__gigyaConf = {toggles: {alwaysValidatePassword: true}};
+        // window.__gigyaConf = {toggles: {alwaysValidatePassword: false}};
         this.init()
             .then(() => console.log('Site initialization completed successfully'));
     }
@@ -40,7 +40,8 @@ export class GigyaPage {
             this._siteService.saveSite({
                 domain, apiKey, dc, env, screenSetPrefix: screenSetPrefix
             });
-            window.open(`http://${domain}:3232/?dc=${dc}&env=${env}&apiKey=${apiKey}`, newPage ? '_blank' : '_self');
+            const port = location.protocol === 'https:' ? '3233' :'3232';
+            window.open(`${location.protocol}//${domain}:${port}/?dc=${dc}&env=${env}&apiKey=${apiKey}`, newPage ? '_blank' : '_self');
         });
 
         document.getElementById('user').style.display = 'none';
@@ -193,6 +194,10 @@ export class GigyaPage {
         env = env && env !== 'prod' ? `-${env}` : '';
         if(env) {
             dc = dc || '.us1';
+        }
+        if(dc === '.il1' && env === '-local') {
+            dc = dc.replace('il1','');
+            env = env.replace('-','');
         }
         ScriptLoader.URL(`https://cdns${dc}${env}.gigya.com/js/gigya.js?apiKey=${apiKey}`);
         return new Promise(resolve => {

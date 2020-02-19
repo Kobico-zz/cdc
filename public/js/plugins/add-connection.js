@@ -4,7 +4,7 @@ export class AddConnection extends GigyaPlugin {
     show() {
         super.show();
         gigya.socialize.showAddConnectionsUI({
-            enabledProviders: 'apple,facebook',
+            // enabledProviders: 'apple,facebook',
             requiredCapabilities: 'login',
             width: 300,
             version: '2'
